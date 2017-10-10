@@ -1,5 +1,5 @@
 let gold = parseInt(getData('gold', 0));
-let buildings = parse(getData('buildings', stringify({
+const buildings = parse(getData('buildings', stringify({
 	"miner": {
 		"amount": 10,
 		"time": 10,
@@ -7,8 +7,6 @@ let buildings = parse(getData('buildings', stringify({
 	}
 })));
 let goldWhenClick = 1;
-let world = [];
-let presets;
 let seconds;
 let imgs = {};
 let scrl = 0;
@@ -55,5 +53,5 @@ function handleVisibilityChange() {
 
 document.addEventListener("visibilitychange", handleVisibilityChange, false);
 
-setInterval(save, 5000)
-setInterval(giveGold, 1000)
+//setInterval(save, 5000)
+//setInterval(giveGold, 1000)
